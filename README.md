@@ -1,1 +1,1 @@
-# qa_pw_test_organization
+Playwright: practice working with test files organization.
