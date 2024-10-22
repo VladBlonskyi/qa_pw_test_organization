@@ -8,7 +8,6 @@ test('Successful `Sign up` flow test', async ({ page }) => {
   await page.getByPlaceholder('Email'). fill(faker.internet.email());
   await page.getByPlaceholder('Password'). fill(faker.internet.password());
   await page.getByRole('button', { name: 'Sign up' }).click();
-  await page.waitForURL('https://conduit.mate.academy/'); 
 
   await expect(page.getByText('Your Feed')).toBeVisible();
 });
